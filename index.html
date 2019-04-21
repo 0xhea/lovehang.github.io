@@ -33,6 +33,17 @@
         <h1 class="text-muted">Go To Beijing!</h1>
       </div>
 
+
+      <div class="page-header">
+        <h1>倒计时：</h1>
+      </div>
+
+      <p>
+        <h3>距离去北京（9月30日）:&nbsp;&nbsp;<span id="date0930"></span></h3>
+        <h3>距离找工作（7月31日）:&nbsp;&nbsp;<span id="date0731"></span></h3>
+      </p>
+
+
 	  <div class="page-header">
         <h1>计划：</h1>
       </div>
@@ -41,63 +52,6 @@
 	    <h4>语言（C/C++）：5月底</h4>
 	    <h4>十月之前去北京，八月开始找工作，之前要学完C++，数据结构与算法，多做题</h4>
 	  </p>
-
-
-      <div class="page-header">
-        <h1>倒计时：</h1>
-      </div>
-
-      <p>
-        <h3>距离去北京（9月30日）:&nbsp;&nbsp;<span id="date0930"></span></h3>
-		<SCRIPT language=javascript>
-          <!--
-          //document.write("");
-          function show_time(){
-          window.setTimeout("show_time()", 1000);
-          BirthDay=new Date("09-30-2019");
-          today=new Date();
-          timeold=(BirthDay.getTime()-today.getTime());
-          sectimeold=timeold/1000
-          secondsold=Math.floor(sectimeold);
-          msPerDay=24*60*60*1000
-          e_daysold=timeold/msPerDay
-          daysold=Math.floor(e_daysold);
-          e_hrsold=(e_daysold-daysold)*24;
-          hrsold=Math.floor(e_hrsold);
-          e_minsold=(e_hrsold-hrsold)*60;
-          minsold=Math.floor((e_hrsold-hrsold)*60);
-          seconds=Math.floor((e_minsold-minsold)*60);
-          date0930.innerHTML=daysold+"天 "+hrsold+"小时 "+minsold+"分 "+seconds+"秒" ;
-          }
-          show_time();
-          //-->
-		</SCRIPT>
-
-        <h3>距离找工作（7月31日）:&nbsp;&nbsp;<span id="date0731"></span></h3>
-		<SCRIPT language=javascript>
-          <!--
-          //document.write("");
-          function show_time(){
-          window.setTimeout("show_time()", 1000);
-          BirthDay=new Date("07-31-2019");
-          today=new Date();
-          timeold=(BirthDay.getTime()-today.getTime());
-          sectimeold=timeold/1000
-          secondsold=Math.floor(sectimeold);
-          msPerDay=24*60*60*1000
-          e_daysold=timeold/msPerDay
-          daysold=Math.floor(e_daysold);
-          e_hrsold=(e_daysold-daysold)*24;
-          hrsold=Math.floor(e_hrsold);
-          e_minsold=(e_hrsold-hrsold)*60;
-          minsold=Math.floor((e_hrsold-hrsold)*60);
-          seconds=Math.floor((e_minsold-minsold)*60);
-          date0731.innerHTML=daysold+"天 "+hrsold+"小时 "+minsold+"分 "+seconds+"秒" ;
-          }
-          show_time();
-          //-->
-		</SCRIPT>
-      </p>
 
 
       <div class="page-header">
@@ -130,6 +84,54 @@
 
     </div> <!-- /container -->
 
+
+    <SCRIPT language=javascript>
+            <!--
+            //document.write("");
+            function show_time(){
+            window.setTimeout("show_time()", 1000);
+            BirthDay=new Date("09-30-2019");
+            today=new Date();
+            timeold=(BirthDay.getTime()-today.getTime());
+            sectimeold=timeold/1000
+            secondsold=Math.floor(sectimeold);
+            msPerDay=24*60*60*1000
+            e_daysold=timeold/msPerDay
+            daysold=Math.floor(e_daysold);
+            e_hrsold=(e_daysold-daysold)*24;
+            hrsold=Math.floor(e_hrsold);
+            e_minsold=(e_hrsold-hrsold)*60;
+            minsold=Math.floor((e_hrsold-hrsold)*60);
+            seconds=Math.floor((e_minsold-minsold)*60);
+            date0930.innerHTML=daysold+"天 "+hrsold+"小时 "+minsold+"分 "+seconds+"秒" ;
+            }
+            show_time();
+            //-->
+    </SCRIPT>
+    
+    <SCRIPT language=javascript>
+            <!--
+            //document.write("");
+            function show_time(){
+            window.setTimeout("show_time()", 1000);
+            BirthDay=new Date("07-31-2019");
+            today=new Date();
+            timeold=(BirthDay.getTime()-today.getTime());
+            sectimeold=timeold/1000
+            secondsold=Math.floor(sectimeold);
+            msPerDay=24*60*60*1000
+            e_daysold=timeold/msPerDay
+            daysold=Math.floor(e_daysold);
+            e_hrsold=(e_daysold-daysold)*24;
+            hrsold=Math.floor(e_hrsold);
+            e_minsold=(e_hrsold-hrsold)*60;
+            minsold=Math.floor((e_hrsold-hrsold)*60);
+            seconds=Math.floor((e_minsold-minsold)*60);
+            date0731.innerHTML=daysold+"天 "+hrsold+"小时 "+minsold+"分 "+seconds+"秒" ;
+            }
+            show_time();
+            //-->
+    </SCRIPT>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
